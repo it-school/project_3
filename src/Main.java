@@ -10,5 +10,6 @@ public class Main {
         System.out.printf("sqrt(%.3f) = %.3f%n", x2, Math.sqrt(x2));
         System.out.printf("sqrt(%.3f) = %.3f%n", x3, Math.sqrt(x3));
         System.out.printf("sqrt(%.3f) = %.3f%n", x4, Math.sqrt(x4));
+
     }
 }
