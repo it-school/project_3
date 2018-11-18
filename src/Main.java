@@ -6,10 +6,12 @@ public class Main {
         double b = 3.5;
         double c = 0.25;
 
-        if (a > 0) ;
-        double x = ((b + Math.sqrt(Math.pow(b, 2)) + 4 * a * c) / 2 * a) - (Math.pow(a, 3) * c) + Math.pow(b, -2);
-        System.out.println("X =  " + x);
-
+        if ((a > 0) && (Math.pow(b, 2) + 4 * a * c >= 0)) // под корнем тоже не должно быть отрицательного значения
+        { // а в скобках записываем тот код, который должен выполниться, если выполняется условие
+            double x = ((b + Math.sqrt(Math.pow(b, 2) + 4 * a * c)) / 2 * a) - (Math.pow(a, 3) * c) + Math.pow(b, -2);
+            System.out.println("X =  " + x);
+        }
+        
         double s = 154;
         double q = Math.pow(s, 2) + Math.pow(s, 3);
         System.out.println("Q =  " + q);
@@ -19,10 +21,12 @@ public class Main {
         System.out.println("T =  " + t);
 
         double n = 5, v =4;
-        double k = ((n + v) / (v+1))-((n*v)-12)/(34+n);
-       if (n > 0) if( v > 0);
-        System.out.println("K =  " + k);
-
+        if ((n > 0) && ( v > 0))
+        {
+            double k = ((n + v) / (v+1))-((n*v)-12)/(34+n);
+            System.out.println("K =  " + k);
+        }
+        
         double g = 3;
         double h = (Math.sin ( Math.sqrt ( g + 1 )))-(Math.sin ( Math.sqrt( g - 1 )));
         System.out.println("H = " + h );
