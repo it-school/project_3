@@ -23,6 +23,9 @@ public class Main {
        if (n > 0) if( v > 0);
         System.out.println("K =  " + k);
 
+        double g = 3;
+        double h = (Math.sin ( Math.sqrt ( g + 1 )))-(Math.sin ( Math.sqrt( g - 1 )));
+        System.out.println("H = " + h );
     }
 
 
